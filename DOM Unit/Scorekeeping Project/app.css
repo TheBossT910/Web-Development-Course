@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+#pingpongImg {
+    width: 25%;
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}

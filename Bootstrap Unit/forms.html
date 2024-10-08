@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-3 text-center">Forms</h1>
+        <form action="#nowhere">
+            <div class="form-row">
+                <!-- email input -->
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <!-- password input -->
+                <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="row">
+                <!-- address input -->
+                <div class="form-group col-lg-5">
+                    <label for="address">Street Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="91 Spruce Gardens">
+                </div>
+                <!-- city input -->
+                <div class="form-group col-lg-3">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="Belleville">
+                </div>
+                <!-- dropdown select input -->
+                <div class="form-group col-lg-2 col-6">
+                    <label for="state">State</label>
+                    <select class="form-control" name="state" id="state">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                    </select>
+                </div>
+                <!-- postal code input -->
+                <div class="form-group col-lg-2 col-6">
+                    <label for="postal">Postal Code</label>
+                    <input type="text" class="form-control" id="postal" placeholder="K8N 0B5">
+                </div>
+            </div>
+            <!-- default checkbox input -->
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="select">
+                    <label class="form-check-label" for="select">Sign Me Up</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <!-- custom checkbox input -->
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customSelect">
+                    <label for="customSelect" class="custom-control-label">Check this custom checkbox!</label>
+                </div>
+            </div>
+            <!-- submit button -->
+            <button type="submit" class="btn btn-success">Register</button>
+        </form>
+    </div>
+    <!-- Javascript stuff -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

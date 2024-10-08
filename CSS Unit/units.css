@@ -1,0 +1,73 @@
+/* impacting rem */
+html {
+    font-size: 20px;
+}
+
+#percentages {
+    background-color: grey;
+    width: 400px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: aqua;
+    /* relative to the parent, in this case the section element */
+    width: 70%;
+    height: 20%;
+}
+
+/* using em */
+h1 {
+    font-size: 30px;
+    border: 1px solid black;
+    /* 200% of the font size in this case */
+    line-height: 200%;
+}
+
+#ems {
+    font-size: 10px;
+}
+
+#ems h2 {
+    /* refers to the parent element's font-size */
+    font-size: 2em;
+    /* refers to the font-size of the h2 element itself */
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 0.8em;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+
+#ems ul {
+    font-size: 0.7em;
+}
+
+/* using rem */
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}

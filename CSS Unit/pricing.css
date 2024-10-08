@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    /* making the corners */
+    border-radius: 10px;
+    /* top/bottom, left/right padding */
+    padding: 15px 25px;
+    /* will take up the whole parent (body) until it reaches a max width of 960px */
+    width: 100%;
+    max-width: 960px;
+    /* flex stuff, making our default for phones */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    /* top, left/right, bottom */
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    /* top/bottom, left/right */
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    /* making the corners curved */
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    /* top/bottom, left/right */
+    padding: 15px 35px;
+    /* gets rid of the underline */
+    text-decoration: none;
+    /* top/bottom, left/right */
+    margin: 25px 0;
+    /* adding a transition */
+    transition: background-color 200ms ease-in-out;
+}
+
+/* modifying the link (looks like a button) when it is being hovered over or focused on */
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+/* has multiple classes, written like class="pricing-button is-featured" */
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #48aaff;
+    color: white;
+}
+
+/* adjusting look for different screen sizes */
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        /* getting rid of the bottom border */
+        border-bottom: none;
+        /* adding a right border instead */
+        border-right: 1px solid #e1f1ff;
+        /* top/bottom, left/right */
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        /* no border on the last item */
+        border-right: none;
+    }
+}

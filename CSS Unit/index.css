@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: blue underline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    font-family: Segoe UI, Futura, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
+
+/* modifying all button elements */
+button {
+    background-color: black;
+    color: white;
+}
+
+/* modifying the element with the log_in id*/
+#log_in {
+    background-color: white;
+    color: black;
+}
+
+/* selects both things to be green */
+/* h1, h2 {
+    color: green;
+} */
+
+/* selects all elements to be green */
+/* * {
+    color: green;
+} */
+

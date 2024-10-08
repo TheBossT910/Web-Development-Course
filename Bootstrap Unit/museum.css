@@ -1,0 +1,74 @@
+body {
+    /* setting the background color */
+    background-color: #f5d9df;
+    /* changing the font */
+    font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+    color: #ea1c2c;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color: #f498b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 75px;
+}
+
+/* changing everything inside the main navbar */
+#mainNavbar {
+    /* changing the font size based on the parent font */
+    font-size: 1.5rem;
+    /* changing the font weight (thick/thiness of the font) */
+    font-weight: 100;
+}
+
+/* changing the brand */
+#mainNavbar .navbar-brand {
+    /* changing the color of the brand inside the main navbar */
+    color: #ea1c2c;
+    /* changing the font size of the brand inside of the main navbar */
+    font-size: 1.5rem;
+}
+
+/* changing all links inside mainNavbar */
+#mainNavbar .nav-link {
+    /* changing the color to white */
+    color: white;
+}
+
+/* changing all links inside mainNavbar */
+#mainNavbar .nav-link:hover {
+    /* changing the color to red when being overed over */
+    color: #ea1c2c;
+}
+
+/* chanigng the color of the slashes inside of the spans */
+#headingGroup span{
+    color: #ea1c2c;
+}
+
+/* modifying all h1 in headingGroup */
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #dec0de;
+    transition: background 1s;
+}
+
+@media (max-width: 1240px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}

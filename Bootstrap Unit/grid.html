@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-3 text-center text-primary">The Grid System</h1>
+        <!-- a row is 12 units going across the screen -->
+        <div class="row">
+            <div class="col-2 bg-success">I AM 2 UNITS</div>
+            <div class="col-8 bg-danger">I AM 8 UNITS</div>
+            <div class="col-2 bg-info">I AM 2 UNITS</div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-secondary">I AM 3 UNITS</div>
+            <div class="col-6 bg-info">I AM 6 UNITS</div>
+            <div class="col-3 bg-danger">I AM 3 UNITS</div>
+        </div>
+        <!-- we can nest containers inside of containers -->
+        <div class="container">
+            <div class="row">
+                <!-- auto sizes columns equally -->
+                <div class="col bg-warning">I AM AUTO SIZED</div>
+                <div class="col bg-secondary">I AM AUTO SIZED</div>
+                <!-- the one below is manually sized to 8, everything else dynamically reacts to it (I think) -->
+                <div class="col-8 bg-primary">I AM AUTO SIZED</div>
+            </div>
+        </div>
+        <h2 class="display-3">Responsive Grid</h2>
+        <div class="row">
+            <div class="col-md-6 col-xl-3 bg-info">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus sed
+                    mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio necessitatibus
+                    at quaerat optio totam perferendis. BLUE</p>
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus sed
+                    mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio necessitatibus
+                    at quaerat optio totam perferendis. GREEN</p>
+            </div>
+            <div class="col-md-6 col-xl-3 bg-info">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus sed
+                    mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio necessitatibus
+                    at quaerat optio totam perferendis.</p>
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus sed
+                    mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio necessitatibus
+                    at quaerat optio totam perferendis.</p>
+            </div>
+            <h2>Grid Alignment</h2>
+            <div class="row align-items-center">
+                <div class="col-3 bg-danger">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus
+                        sed
+                        mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio
+                        necessitatibus
+                        at quaerat optio totam perferendis.</p>
+                </div>
+                <div class="col-3 bg-warning">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus
+                        sed
+                        mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio
+                        necessitatibus
+                        at quaerat optio totam perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                        provident quisquam tempore iure modi similique omnis voluptas unde consequatur nemo. Ratione
+                        molestias nemo, omnis atque consequatur animi sint amet mollitia.
+                        Necessitatibus vero, eum, asperiores facilis animi voluptatum ducimus iste quidem quod cum minus
+                        atque quia, illum delectus odio eligendi ratione tenetur debitis labore laborum nulla id
+                        laboriosam! Corrupti, aliquam atque.</p>
+                </div>
+                <div class="col-3 bg-success">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus
+                        sed
+                        mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio
+                        necessitatibus
+                        at quaerat optio totam perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium, atque. Minima culpa velit eaque maiores totam asperiores obcaecati molestias,
+                        laborum, voluptatibus quisquam maxime consectetur delectus alias aut consequatur? Rerum,
+                        recusandae.</p>
+                </div>
+                <div class="col-3 bg-info align-self-end">
+                    <p> align-self-end makes it align itself to the end of the div! Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Culpa voluptatem cupiditate vero natus
+                        sed
+                        mollitia dolores enim itaque! Ipsam consequuntur nisi expedita, veritatis distinctio
+                        necessitatibus
+                        at quaerat optio totam perferendis.</p>
+                </div>
+
+                <h3>Justify Content</h3>
+                <div class="row justify-content-center justify-content-lg-start justify-content-xl-between">
+                    <div class="col-md-4 bg-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo quibusdam culpa magni
+                        debitis officia tempora repudiandae sequi ipsa ut dolorum excepturi nihil necessitatibus
+                        reprehenderit vero obcaecati, distinctio voluptatibus rem.
+                    </div>
+                    <div class="col-md-4 bg-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo quibusdam culpa magni
+                        debitis officia tempora repudiandae sequi ipsa ut dolorum excepturi nihil necessitatibus
+                        reprehenderit vero obcaecati, distinctio voluptatibus rem.
+                    </div>
+                    <div class="col-xl-2 bg-secondary">
+                        <p>Hello! Because I am xl, I get organized like this. If I was lg, i would be organized differently. And if I was anything else by default, I would be organized like the ones above</p>
+                    </div>
+                </div>
+
+                <!-- images -->
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <img class="img-fluid"
+                            src="https://media.ed.edmunds-media.com/honda/cr-v/2016/oem/2016_honda_cr-v_4dr-suv_touring_fq_oem_1_1600.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <img class="img-fluid"
+                            src="https://www.motortrend.com/uploads/2021/12/2022-Honda-CR-V-Hybrid_37.jpg" alt="">
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <img class="img-fluid"
+                            src="https://images.cars.com/cldstatic/wp-content/uploads/honda-cr-v-ex-l-2023-05-exterior-front-angle-scaled.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript stuff -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+            integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

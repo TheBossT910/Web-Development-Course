@@ -1,0 +1,69 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    /* justify-content is on the main-axis */
+    justify-content: center;
+    /* align-items is on the cross-axis */
+    /* align-items: flex-end; */
+    /* flex-wrap: wrap; */
+    /* only works when wrap is set */
+    /* align-content: center; */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    /* max-width: 300px; */
+    text-align: center;
+    flex-basis: 600px;
+}
+
+div:nth-of-type(1) {
+    /* grow and shrink is relative to the other elements */
+    flex-grow: 1;
+    flex-shrink: 1.5;
+}
+
+div:nth-of-type(5) {
+    /* takes up twice as much space as the first div */
+    /*Ex. initial: 200px, div1: 250px, div2: 300px. div3 took 100px vs 50px, twice as much space */
+    flex-grow: 2;
+}
+
+/* div:nth-of-type(1) {
+    align-self: flex-start;
+} */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: magenta;
+    /* border: 2px solid white; */
+    /* grow, shrink, basis */
+    /* grow, basis */
+    /* grow */
+    flex: 1 2 200px;
+}
+
+main .maincontent {
+    background-color: lime;
+    flex: 2 1 450px;
+}
+

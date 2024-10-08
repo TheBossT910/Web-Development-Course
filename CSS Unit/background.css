@@ -1,0 +1,14 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-image: url("https://assetsio.reedpopcdn.com/pikmin-4-announcement-art.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp");
+    background-size: cover;
+    background-position: top; */
+    background: no-repeat center/cover url("https://assetsio.reedpopcdn.com/pikmin-4-announcement-art.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp");
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}

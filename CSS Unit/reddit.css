@@ -1,0 +1,119 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+/* modifying all button elements */
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+/* modifying both h1 and h2 elements */
+h1,h2 {
+    color: #1d3557;
+}
+
+/* modifying element with the signup id  */
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: green;
+}
+
+/* modifying all elements with the tag class */
+.tag {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+}
+
+/* modifying all anchor tags inside of an element with the post class */
+.post a {
+    color: green;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* modifying all anchor tags inside of a footer  */
+footer a {
+    color: red;
+}
+
+/* modifying any button that comes immediately after an h2 element. They both need to be in the same level (NOT nested) */
+h2 + button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* modifying all anchor tags that are a DIRECT descendant of the footer */
+footer > a {
+    color: blue;
+}
+
+/* only modifies any input with the password type */
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* These two do the same thing */
+/* section[class="post"] {
+    background-color: purple;
+} */
+
+/* section.post {
+    background-color: purple;
+} */
+
+/* href in anchor needs to contain google somewhere */
+a[href*="google"] {
+    color: magenta;
+}
+
+/* change color when hovering over button  */
+.post button:hover {
+    background-color: red;
+    transition: background-color 1s ease-out, color 1s ease-out;
+    color: white;
+}
+
+/* pseudo classes */
+/* underline when hovering over anchor descending from a post class */
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* change color when clicking button descending from a post class  */
+.post button:active {
+    background-color: green;
+}
+
+.post:nth-of-type(2n) {
+    background-color: silver;
+}
+
+/* pseudo elements */
+/* modifies the 1st letter of every h2 */
+h2::first-letter {
+    font-size: 50px;
+}
+
+/* makes the 1st line of text purple */
+p::first-line {
+    color: rgb(213, 13, 213);
+}
+
+p::selection {
+    background-color: orange;
+}
+
+/* applies it to the whole doccument
+::selection {
+    background-color: green;
+} */
